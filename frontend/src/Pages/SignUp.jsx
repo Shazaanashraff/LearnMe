@@ -35,7 +35,7 @@ const SignupPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/signup', {
+      const response = await axios.post('https://sincere-gratitude-production-c47e.up.railway.app/api/auth/signup', {
         email: formData.email,
         password: formData.password,
         firstName: formData.firstName,

@@ -24,7 +24,7 @@ const LoginPage = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/login', {
+      const response = await axios.post('https://sincere-gratitude-production-c47e.up.railway.app/api/auth/login', {
         email: formData.email,
         password: formData.password,
         userId: formData.userId
