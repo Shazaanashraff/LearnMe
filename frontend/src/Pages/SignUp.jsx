@@ -49,6 +49,7 @@ const SignupPage = () => {
       if (response.data.success) {
         localStorage.setItem('user', JSON.stringify(response.data.user));
         navigate('/login');
+        console.log("User registered successfully:", response.data.user); // Debug log
       } else {
         setError(response.data.message || 'Registration failed');
       }
